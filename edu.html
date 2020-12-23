@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAEJO UNIVERSITY</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+        type="image/icon type">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>MAEJO UNIVERSITY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+        type="image/icon type">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -102,6 +115,7 @@
             padding: 10px;
             text-align: center;
             color: white;
+            height: 100px;
         }
 
         .city {
@@ -117,6 +131,12 @@
             width: 100%;
             padding: 10px;
             height: 300px;
+        }
+
+        .containera {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
         }
 
         .container {
@@ -146,7 +166,7 @@
             width: 60%;
             padding: 10px 10px;
             box-sizing: border-box;
-            
+
             border-bottom: 2px solid black;
         }
 
@@ -197,6 +217,30 @@
 
             }
         }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
     </style>
 </head>
 
@@ -220,7 +264,6 @@
         </div>
         <link rel="stylesheet" href="styles.css">
     </header>
-
     <div class="navbar">
 
         <div>
@@ -231,86 +274,27 @@
             <a href="D:\webcode\about.html">เกี่ยวกับมหาวิทยาลัย</a>
         </div>
         <div>
-            <a href="D:\webcode\about.html">หน่วยงาน</a>
+            <a href="D:\webcode\agency.html">หน่วยงาน</a>
         </div>
         <div>
-            <a href="D:\webcode\leave.html">การศึกษา</a>
+            <a href="http://www.education.mju.ac.th/" target="_blank">การศึกษา</a>
         </div>
         <div>
-            <a href="file:///D:/webcode/index.html">วิชาการ</a>
+            <a href="D:\webcode\research.html">วิชาการ</a>
         </div>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search">
                 <button type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-search"></span> Search
-                  </button>
+                </button>
             </form>
         </div>
     </div>
-
-
-    <article>
-        <div class="center">
-            <center>คำร้องขอพักการศึกษา</center>
-            <form>
-                <label>ภาคเรียน</label><input type="radio" id="term1" name="term" value="term1">
-                <label for="term1">1</label>
-                <input type="radio" id="term2" name="term" value="term2">
-                <label for="term2">2</label>
-                <label>&nbsp;&nbsp;&nbsp;ปีการศึกษา</label>
-                <input type="text" id="lname" name="lname">
-                <label>&nbsp;&nbsp;&nbsp;เรียน คณบดีคณะ</label>
-                <select name="cars" id="cars">
-                    <option value="volvo">วิทยาศาสตร์</option>
-                    <option value="saab">บริหารธุรกิจ</option>
-                    <option value="opel">ผลิตกรรมการเกษตร</option>
-                    <option value="audi">ศิลปศาสตร์</option>
-                </select><br>
-                <label>ข้าพเจ้า</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">นาย</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">นาง</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">นางสาว</label>
-                <label for="fname">&nbsp;&nbsp;&nbsp;ชื่อ</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">นามสกุล</label>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="lname">รหัสนักศึกษา</label>
-                <input type="text" id="lname" name="lname">
-                <label for="lname">&nbsp;&nbsp;&nbsp;เบอร์โทรศัพท์</label>
-                <input type="text" id="lname" name="lname"><br>
-                <label>หลักสูตร ปริญญาตรี</label><input type="radio" id="term1" name="er" value="term1">
-                <label for="term1">4-5 ปี</label><input type="radio" id="term1" name="er" value="term1">
-                <label for="term1">4 ปีเทียบเข้า(2 ปี)</label>
-                <input type="radio" id="ma" name="ma" value="ma">
-                <label for="ma">ภาคปกติ</label><input type="radio" id="ma" name="ma" value="ma">
-                <label for="ma">ภาคพิเศษ</label><br>
-                <label>คณะ</label>
-                <select name="faculty" id="faculty">
-                    <option value="volvo">วิทยาศาสตร์</option>
-                    <option value="saab">บริหารธุรกิจ</option>
-                    <option value="opel">ผลิตกรรมการเกษตร</option>
-                    <option value="audi">ศิลปศาสตร์</option>
-                </select>
-                <label>&nbsp;&nbsp;&nbsp;สาชา</label>
-                <select name="branch" id="branch">
-                    <option value="volvo">วิทยาการคอมพิวเตอร์</option>
-                    <option value="saab">บัญชี</option>
-                    <option value="opel">พืชศาสตร์</option>
-                    <option value="audi">ภาษาอังกฤษ</option>
-                </select>
-            </form>
-            <div class="center1">
-                <label>มีความประสงค2จะขอลาพักการศึกษา เนื่องจาก</label>
-            </div>
-        </div>
-
-    </article>
-
-    <footer>Footer</footer>
+    <footer>
+        <a href="https://www.facebook.com/MaejoUniversity" target="#" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.com/mjuchannelhd" target="#" class="fa fa-youtube"></a>
+    </footer>
 </body>
 
 </html>
