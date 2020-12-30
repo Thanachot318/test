@@ -294,123 +294,170 @@
                 <div class="btnsubmit">
                     <img src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
                         width="100">
-                    <h2>Application for study leave</h2>
-                    <h3>(For students who have studied before Not less than one semester)</h3>
+                    <h2>คําร้องขอลาพักการศึกษา</h2>
+                    <h3>(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</h3>
                 </div><br>
                 <div class="row">
                     <div class="col-sm-2">
-                        <label for="cars">Choose gender</label><br>
+                        <label for="cars">ข้าพเจ้า</label><br>
                         <select id="cars">
-                            <option value="volvo">Male</option>
-                            <option value="saab">Female</option>
+                            <option value="volvo">นาย</option>
+                            <option value="saab">นางสาว</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">Firstname</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Firstname"
-                            required>
+                        <label for="validationCustom01" class="form-label">ชื่อ</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="กรอกชื่อ" required>
                         <div class="valid-feedback">
-                            Looks good!
+                            ดีมาก
                         </div>
                         <div class="invalid-feedback">
-                            Please enter firstname.
+                            กรุณากรอกชื่อ
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label for="validationCustom02" class="form-label">Lastname</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Lastname"
+                        <label for="validationCustom02" class="form-label">นามสกุล</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="กรอกนามสกุล"
                             required>
                         <div class="valid-feedback">
-                            Looks good!
+                            ดีมาก
                         </div>
                         <div class="invalid-feedback">
-                            Please enter lastname.
+                            กรุณากรอกนามสกุล
                         </div>
                     </div><br>
                 </div><br>
                 <div class="row">
                     <div class="col-sm-1">
-                        <label for="Semester">Semester</label><br>
+                        <label for="Semester">เทอมที่</label><br>
                         <select id="Semester">
                             <option value="Semester1">1</option>
                             <option value="Semester2">2</option>
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <label for="validationCustom01" class="form-label">Year</label>
+                        <label for="validationCustom01" class="form-label">ปีการศึกษา</label>
                         <input type="number" pattern="[0-9]{4}" maxlength="4" class="form-control"
-                            id="validationCustom01" placeholder="Year" required>
+                            id="validationCustom01" placeholder="ปี" required>
                         <div class="invalid-feedback">
-                            Please eneter year.
+                            กรุณากรอกปีการศึกษา
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <label for="faculty">Faculty</label>
+                        <label for="faculty">คณะ</label>
                         <select id="faculty">
-                            <option value="faculty1">Engineering</option>
-                            <option value="faculty2">Science</option>
-                            <option value="faculty3">Business Administration</option>
-                            <option value="faculty4">Information And Communication</option>
-                            <option value="faculty5">Agricultural Production</option>
+                            <option value="faculty1">วิศวกรรม</option>
+                            <option value="faculty2">วิทยาศาสตร์</option>
+                            <option value="faculty3">บริหารธุรกิจ</option>
+                            <option value="faculty4">สารสนเทศและการสื่อสาร</option>
+                            <option value="faculty5">ผลิตกรรมทางการเกษตร</option>
                         </select>
                     </div><br>
                     <div class="col-md-2">
-                        <label for="ิbranch">Branch</label>
+                        <label for="ิbranch">สาขา</label>
                         <select id="branch">
-                            <option value="branch1">Food Engineering</option>
-                            <option value="branch2">Computer Science</option>
-                            <option value="branch3">Business Administration</option>
-                            <option value="branch4">Digital Communication</option>
-                            <option value="branch5">Horticulture</option>
+                            <option value="branch1">วิศวกรรมการอาหาร</option>
+                            <option value="branch2">วิทยาการคอมพิวเตอรฺ์</option>
+                            <option value="branch3">บริหารธุรกิจ</option>
+                            <option value="branch4">การสื่อสารดิจิทัล</option>
+                            <option value="branch5">พืชสวน</option>
                         </select>
                     </div>
                 </div><br>
                 <div class="row">
                     <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label">Student code</label>
+                        <label for="validationCustom05" class="form-label">รหัสนักศึกษา</label>
                         <input type="text" class="form-control" id="validationCustom05" placeholder="0123456789"
                             pattern="[0-9]{10}" maxlength="10" required>
                         <div class="invalid-feedback">
-                            Please provide a valid student code.
+                            กรุณากรอกรหัสนักศึกษา
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label">Phone</label>
+                        <label for="validationCustom05" class="form-label">เบอร์โทรศัพท์</label>
                         <input type="tel" class="form-control" id="validationCustom05" placeholder="081-2345678"
                             pattern="[0-9]{3}-[0-9]{7}" pattern="[0-9]{10}" maxlength="10" required>
                         <div class="invalid-feedback">
-                            Please provide a valid phone.
+                            กรุณากรอกเบอร์โทรศัพท์
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <label for="emails">Enter email addresses</label>
-                        <input type="email" class="form-control" id="validationCustom05" placeholder="email" required>
+                        <label for="emails">กรอกอีเมล</label>
+                        <input type="email" class="form-control" id="validationCustom05" placeholder="Email" required>
                     </div>
                 </div><br>
                 <div class="row">
                     <div class="col-sm-4">
-                        <label for="course">Course</label><br>
-                        <input type="radio" id="course1" name="course">&nbsp;Bachelor's degree<br>
-                        <input type="radio" id="course2" name="course">&nbsp;Compare to school (2 years)
+                        <label for="course">หลักสูตร</label><br>
+                        <input type="radio" id="course1" name="course">&nbsp;4-5 ปี<br>
+                        <input type="radio" id="course2" name="course">&nbsp;4 ปีเทียบเข้าเรียน(2ปี)
                     </div>
                     <div class="col-sm-4">
-                        <label for="section">section</label><br>
-                        <input type="radio" name="section" id="section1">&nbsp;Regular session<br>
-                        <input type="radio" name="section" id="section2">&nbsp;Associate sector
+                        <label for="section">ภาค</label><br>
+                        <input type="radio" name="section" id="section1">&nbsp;ภาคปกติ<br>
+                        <input type="radio" name="section" id="section2">&nbsp;ภาคสมทบ
                     </div>
-
                 </div><br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="cars">ข้าพเจ้า</label><br>
+                        <select id="cars">
+                            <option value="volvo">นาย</option>
+                            <option value="saab">นาง</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">ชื่อ(ผู้ปกครอง)</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="กรอกชื่อ" required>
+                        <div class="valid-feedback">
+                            ดีมาก
+                        </div>
+                        <div class="invalid-feedback">
+                            กรุณากรอกชื่อ
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">นามสกุล(ผู้ปกครอง)</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="กรอกนามสกุล"
+                            required>
+                        <div class="valid-feedback">
+                            ดีมาก
+                        </div>
+                        <div class="invalid-feedback">
+                            กรุณากรอกนามสกุล
+                        </div>
+                    </div><br>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">เบอร์โทรศัพท์(ผู้ปกครอง)</label>
+                        <input type="tel" class="form-control" id="validationCustom05" placeholder="081-2345678"
+                            pattern="[0-9]{3}-[0-9]{7}" pattern="[0-9]{10}" maxlength="10" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกเบอร์โทรศัพท์
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="allow">ข้าพเจ้า</label><br>
+                        <input type="radio" id="allow1" name="allow">&nbsp;อนุญาต<br>
+                        <input type="radio" id="allow2" name="allow">&nbsp;ไม่อนุญาต
+                    </div>
+                </div><br>
+                <form>
+                    <label for="datemin">วันที่</label>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+                </form>
                 <div class="btnsubmit">
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="w3review">Wish to apply for study leave due to : </label><br>
+                            <label for="w3review">มีความประสงค2จะขอลาพักการศึกษา เนื่องจาก</label><br>
                             <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
                         </div>
                     </div>
                 </div><br>
                 <div class="btnsubmit">
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">ยืนยัน</button>
                     </div>
                 </div>
             </div>
